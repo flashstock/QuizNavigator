@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyMapActivity" >
+
+	<com.google.android.maps.MapView
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/mapview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentLeft="true"
+	    android:apiKey="0NDGczQKCyx96YtQ0jDDrOqIcahqcPw3hidwpQA"
+	    android:clickable="true" >
+	</com.google.android.maps.MapView>
+	
+	<TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="Click"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" 
+        android:id="@+id/clickBtn"
+        android:onClick="getDistance"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp" >
+
+    <EditText
+        android:id="@+id/questionCaption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/answer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radioGroup1"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="2"
+        android:maxLines="1"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/answer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answer3"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="X"
+        android:maxLines="1" 
+        android:inputType="textCapSentences"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/questionCaption" >
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/wrongAnswer1"
+            android:layout_alignBottom="@+id/wrongAnswer1"
+            android:layout_toLeftOf="@+id/wrongAnswer1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/correctAnswer" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/wrongAnswer2"
+            android:layout_alignBottom="@+id/wrongAnswer2"
+            android:layout_toLeftOf="@+id/wrongAnswer2" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/answer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/answer2"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="1"
+        android:maxLines="1" 
+        android:inputType="textCapSentences"/>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+	<item
+	    android:id="@+id/map_placequestion"
+	    android:title="@string/map_placequestion"
+	    android:showAsAction="always"/>
+	<item
+	    android:id="@+id/map_done"
+	    android:title="@string/map_done"
+	    android:showAsAction="always" />
+	<item
+	    android:id="@+id/map_satellitemode"
+	    android:title="@string/map_satellitemode"
+	    android:showAsAction="never" />
+	<item
+	    android:id="@+id/map_traditionalmode"
+	    android:title="@string/map_traditionalmode"
+	    android:showAsAction="never" />
+	<item
+	    android:id="@+id/map_showdistancemoved"
+	    android:title="@string/map_showdistancemoved"
+	    android:showAsAction="never" />
+	
+</menu>

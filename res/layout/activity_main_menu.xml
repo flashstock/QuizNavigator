@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActivity" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blue" />
+    </FrameLayout>
+    <Button
+        android:id="@+id/walkQuizButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createQuizButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:onClick="walkQuizInterface"
+        android:background="@android:drawable/btn_default"
+        android:text="Walk Quiz" />
+
+    <Button
+        android:id="@+id/createQuizButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="119dp"
+        android:onClick="createQuizDialog"
+        android:background="@android:drawable/btn_default"
+        android:text="Create Quiz" />
+
+</RelativeLayout>
